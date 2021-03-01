@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='yolo',
@@ -8,6 +8,6 @@ setup(
     author='Payam Azad',
     author_email='pazad@cyclomedia.com',
     license='unlicense',
-    packages=['yolo'],
+    packages=find_packages(),
     zip_safe=False
 )
