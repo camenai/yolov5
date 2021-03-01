@@ -8,6 +8,6 @@ setup(
     author='Payam Azad',
     author_email='pazad@cyclomedia.com',
     license='unlicense',
-    packages=find_packages(),
+    packages=['yolo', 'yolo.models', 'yolo.utils'],
     zip_safe=False
 )
