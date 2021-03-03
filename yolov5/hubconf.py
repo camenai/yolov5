@@ -2,7 +2,7 @@
 
 Usage:
     import torch
-    model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True, channels=3, classes=80)
+    model = torch.hub.load('ultralytics/yolo', 'yolov5s', pretrained=True, channels=3, classes=80)
 """
 
 from pathlib import Path

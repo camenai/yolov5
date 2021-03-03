@@ -16,7 +16,7 @@ def gsutil_getsize(url=''):
     return eval(s.split(' ')[0]) if len(s) else 0  # bytes
 
 
-def attempt_download(file, repo='ultralytics/yolov5'):
+def attempt_download(file, repo='ultralytics/yolo'):
     # Attempt file download if does not exist
     file = Path(str(file).strip().replace("'", '').lower())
 
@@ -53,7 +53,7 @@ def attempt_download(file, repo='ultralytics/yolov5'):
 
 
 def gdrive_download(id='16TiPfZj7htmTyhntwcZyEEAejOUxuT6m', file='tmp.zip'):
-    # Downloads a file from Google Drive. from yolov5.utils.google_utils import *; gdrive_download()
+    # Downloads a file from Google Drive. from yolo.utils.google_utils import *; gdrive_download()
     t = time.time()
     file = Path(file)
     cookie = Path('cookie')  # gdrive cookie

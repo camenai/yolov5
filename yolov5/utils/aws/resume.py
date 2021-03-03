@@ -1,4 +1,4 @@
-# Resume all interrupted trainings in yolov5/ dir including DPP trainings
+# Resume all interrupted trainings in yolo/ dir including DPP trainings
 # Usage: $ python utils/aws/resume.py
 
 import os

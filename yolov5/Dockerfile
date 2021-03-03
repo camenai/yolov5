@@ -26,20 +26,20 @@ COPY . /usr/src/app
 # ---------------------------------------------------  Extras Below  ---------------------------------------------------
 
 # Build and Push
-# t=ultralytics/yolov5:latest && sudo docker build -t $t . && sudo docker push $t
+# t=ultralytics/yolo:latest && sudo docker build -t $t . && sudo docker push $t
 # for v in {300..303}; do t=ultralytics/coco:v$v && sudo docker build -t $t . && sudo docker push $t; done
 
 # Pull and Run
-# t=ultralytics/yolov5:latest && sudo docker pull $t && sudo docker run -it --ipc=host --gpus all $t
+# t=ultralytics/yolo:latest && sudo docker pull $t && sudo docker run -it --ipc=host --gpus all $t
 
 # Pull and Run with local directory access
-# t=ultralytics/yolov5:latest && sudo docker pull $t && sudo docker run -it --ipc=host --gpus all -v "$(pwd)"/coco:/usr/src/coco $t
+# t=ultralytics/yolo:latest && sudo docker pull $t && sudo docker run -it --ipc=host --gpus all -v "$(pwd)"/coco:/usr/src/coco $t
 
 # Kill all
 # sudo docker kill $(sudo docker ps -q)
 
 # Kill all image-based
-# sudo docker kill $(sudo docker ps -qa --filter ancestor=ultralytics/yolov5:latest)
+# sudo docker kill $(sudo docker ps -qa --filter ancestor=ultralytics/yolo:latest)
 
 # Bash into running container
 # sudo docker exec -it 5a9b5863d93d bash
